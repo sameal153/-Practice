@@ -12,7 +12,7 @@
         <h1>hello ,{{name}}</h1>
         <h1> Data binding</h1>
         <p>{{ greet('Night') }}</p>
-        <p>{{ havelunch('morning') }}</p>
+        <p>{{ havelunch('morning') }master}</p>
         <p> 
              <a v-bind:href="website">baidu </a>  通常 可以使用  ：来代替v-bind: 
         </p>
@@ -20,7 +20,7 @@
         <p><input type="text" v-bind:value="name"></p>
         <!-- <button v-on:click="age++">add a year</button>
         <button @click="age--"> subtract a year</button>     v-on 可以用 @代替 -->
-        <button @click.once="add(1)">add a year</button>   这里有bug 先点击增加会出问题
+        <button @click.once="add(1)">add a year</button>       这里有bug 先点击增加会出问题  但是点击减少就没有问题
         <button @click="subtract(1)"> subtract a year</button>  
         <button v-on:dblclick="add(10)">add ten year</button>
         <button @dblclick="subtract(10)"> subtract ren year</button> 
